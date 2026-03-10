@@ -7,8 +7,10 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Coffee Analytics Dashboard',
-  description: 'Premium analytics dashboard for coffee shop chain management',
+  // Traducimos el título que aparece en la pestaña del navegador
+  title: 'Dashboard de Analítica - Gestión de Cafeterías',
+  // Traducimos la descripción (SEO)
+  description: 'Panel de analítica premium para la gestión de cadenas de café en Uruguay',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -35,7 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    // CAMBIO IMPORTANTE: Cambiamos lang="en" por lang="es"
+    <html lang="es">
       <body className="font-sans antialiased">
         {children}
         <Analytics />
